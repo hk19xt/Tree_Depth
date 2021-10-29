@@ -2,6 +2,8 @@ package Tree_Depth;
 
 import java.util.Stack;
 
+/*This class is the implementation class using iterative method. */
+
 public class Tree_Depth {
     public int Tree_Depth(TreeNode root){
         if(root == null) {
