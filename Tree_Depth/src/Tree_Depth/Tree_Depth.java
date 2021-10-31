@@ -6,13 +6,15 @@ import java.util.Stack;
 
 public class Tree_Depth {
     public int Tree_Depth(TreeNode root){
-        if(root == null) {
+        
+        int max_depth = 1; //Initialization of the maximum number of depth.
+        
+        if(root == null) { //If there is no nodes in the tree, then return zero.
             return 0;
         }
-        int max_depth = 1;
-
-        Stack<TreeNode> nodes = new Stack<>();
-        Stack<Integer> depth = new Stack<>();
+        
+        Stack<TreeNode> nodes = new Stack<>(); //Initialization of the tree for storing the nodes.
+        Stack<Integer> depth = new Stack<>(); //Initialization of counting the number of depths of the tree.
 
         nodes.push(root);
         depth.push(1);
@@ -37,4 +39,4 @@ public class Tree_Depth {
         return max_depth;
     }
 
-}
+}//Tree_Depth
