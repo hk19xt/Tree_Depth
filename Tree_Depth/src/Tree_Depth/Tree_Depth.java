@@ -38,5 +38,21 @@ public class Tree_Depth {
         }
         return max_depth; //After counting the maximum number of depth tree, then return the max_depth value.
     }
+//     public void addTreeNode(int user_value){
+//         TreeNode n = new TreeNode(user_value);
+        
+//         if(root == null){
+//             root = n;
+//         }
+//         traverse(root, n);
+//     }
 
+//     public void traverse(TreeNode node, Treenode n){
+//         if(n.value < node.value){
+//             if(node.left == null){
+                
+//             }
+//         }
+    
+    }
 }//Tree_Depth
