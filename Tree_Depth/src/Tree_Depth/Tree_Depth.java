@@ -51,4 +51,31 @@ public class Tree_Depth {
     
     }
     
+    public void adding_nodes(int value){
+        TreeNode adding_node = new TreeNode(value);
+        
+        if(root == null){
+            root = adding_node;
+        }
+    
+        traverse_adding(root, adding_node);
+    }
+    
+    public void traverse_adding(TreeNode node, TreeNode adding_node){
+        if(adding_node.value < node.value){
+            if(node.left == null){
+                node.left = adding_node;
+            }else{
+                traverse_adding(node.left, adding_node);
+            }
+        }else if(adding_node.value > node.value){
+            if(node.right == null){
+                node.right = adding_node;
+            }else{
+                traverse_adding(node.right, adding_node);
+            }
+        }
+    
+    }
+    
 }//Tree_Depth
